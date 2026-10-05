@@ -69,7 +69,7 @@ public class Soup {
     public void removeSome(int num){
     int location = (int)(Math.random()*(letters.length() - num));
     String firstPart = letters.substring(0, location);
-    String lastPart = letters.substring(location);
+    String lastPart = letters.substring(location + num);
     letters = (firstPart + lastPart);
     }
 
